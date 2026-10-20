@@ -1,0 +1,116 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>SAHU MART – Your Fashion, Your Style</title><meta name="description" content="SAHU MART – Online clothing store for men, women and kids.">
+<style>
+:root{--bg:#fbf8f3;--sf:#fff;--tx:#1d1a17;--mu:#6b645c;--ac:#b4232f;--gd:#c9a14a;--bd:#e7dfd3;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#16130f;--sf:#221e19;--tx:#f3ede4;--mu:#a69d91;--bd:#3a342c;color-scheme:dark}}
+:root[data-theme=dark]{--bg:#16130f;--sf:#221e19;--tx:#f3ede4;--mu:#a69d91;--bd:#3a342c;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans Devanagari",sans-serif}
+a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit;color:inherit}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--sf);border-bottom:1px solid var(--bd)}
+.w{max-width:1100px;margin:0 auto;padding:0 14px}.row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.nav{justify-content:space-between;padding:8px 0}.logo{display:flex;align-items:center;gap:8px;cursor:pointer}
+.logo b{font:700 20px Georgia,serif;letter-spacing:2px}.logo small{display:block;font-size:10px;color:var(--mu);letter-spacing:.5px}
+.links{display:flex;gap:14px;overflow-x:auto;padding:6px 0;font-size:14px;white-space:nowrap}.links a{color:var(--mu)}.links a:hover{color:var(--ac)}
+.btn{border:0;border-radius:8px;padding:10px 16px;background:var(--ac);color:#fff;cursor:pointer;font-weight:600}
+.btn.o{background:transparent;border:1px solid var(--ac);color:var(--ac)}.btn.g{background:#25d366;color:#fff}.btn.k{background:var(--tx);color:var(--bg)}.btn.s{padding:6px 10px;font-size:13px}
+.hero{background:linear-gradient(120deg,#7a1520,#b4232f 55%,#c9a14a);color:#fff;border-radius:16px;padding:34px 22px;margin:14px 0}
+.hero h1{font:700 clamp(26px,6vw,44px)/1.1 Georgia,serif;margin:0 0 8px}.hero p{margin:0 0 16px;opacity:.92}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+.card{background:var(--sf);border:1px solid var(--bd);border-radius:12px;overflow:hidden;cursor:pointer}
+.ph{aspect-ratio:3/4;background:linear-gradient(135deg,#efe3d0,#d8c3a5);display:flex;align-items:center;justify-content:center;font-size:42px;overflow:hidden}.ph img{width:100%;height:100%;object-fit:cover}
+.ci{padding:10px}.ci h4{margin:0 0 4px;font-size:14px}.pr b{font-size:16px}.pr s{color:var(--mu);font-size:12px;margin-left:5px}.pr em{color:#1a7f37;font-style:normal;font-size:12px;margin-left:5px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:4px 0 10px}.chip{border:1px solid var(--bd);background:var(--sf);border-radius:20px;padding:6px 12px;white-space:nowrap;cursor:pointer;font-size:13px}.chip.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+input,select,textarea{width:100%;padding:10px;border:1px solid var(--bd);border-radius:8px;background:var(--sf);margin:4px 0 10px}
+h2{font:700 24px Georgia,serif;margin:20px 0 10px}.box{background:var(--sf);border:1px solid var(--bd);border-radius:12px;padding:14px;margin-bottom:12px}
+.pd{display:grid;gap:18px;grid-template-columns:1fr}@media(min-width:760px){.pd,.two{grid-template-columns:1fr 1fr}.two{display:grid;gap:18px}}
+.opt{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 12px}.opt span{border:1px solid var(--bd);padding:6px 12px;border-radius:8px;cursor:pointer}.opt span.on{background:var(--tx);color:var(--bg)}
+.thumbs{display:flex;gap:6px;margin-top:6px}.thumbs img{width:56px;height:56px;object-fit:cover;border-radius:6px;cursor:pointer}
+.qty{display:inline-flex;align-items:center;gap:10px}.qty button{width:32px;height:32px;border-radius:8px;border:1px solid var(--bd);background:var(--sf);cursor:pointer}
+.ci-row{display:flex;gap:10px;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--bd)}
+footer{background:#1d1a17;color:#d9d2c7;margin-top:30px;padding:24px 0 90px;font-size:14px}footer a{display:block;margin:4px 0;color:#d9d2c7}
+.fab{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));width:56px;height:56px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px #0005;z-index:9}
+.bdg{background:var(--ac);color:#fff;border-radius:10px;padding:0 6px;font-size:11px}.mu{color:var(--mu)}.tb{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:13px}td,th{padding:6px;border-bottom:1px solid var(--bd);text-align:left}
+.tag{position:absolute;margin:6px;background:var(--gd);color:#000;font-size:11px;padding:2px 7px;border-radius:6px}
+</style></head><body>
+<header><div class="w"><div class="row nav">
+<div class="logo" onclick="go('')"><svg width="40" height="40" viewBox="0 0 40 40"><rect width="40" height="40" rx="10" fill="#b4232f"/><path d="M10 28c0-4 20-3 20-9 0-4-6-5-10-5" fill="none" stroke="#c9a14a" stroke-width="3.5" stroke-linecap="round"/><text x="20" y="35" text-anchor="middle" font-size="7" fill="#fff" font-family="Georgia" font-weight="700">MART</text></svg><div><b>SAHU MART</b><small id="tg"></small></div></div>
+<div class="row"><button class="btn o s" onclick="toggleLang()" id="lb"></button><button class="btn s" onclick="go('cart')">🛒 <span class="bdg" id="cc">0</span></button></div></div>
+<div class="links" id="nav"></div>
+<div class="row" style="padding-bottom:8px"><input id="q" placeholder="" oninput="searchIt(this.value)" style="margin:0"></div></div></header>
+<main class="w" id="app"></main>
+<footer><div class="w two"><div><b style="font:700 20px Georgia">SAHU MART</b><p>Your Fashion, Your Style</p><p>WhatsApp: +91 7318518830</p></div><div id="fl"></div></div><div class="w" style="margin-top:14px;font-size:12px">© 2026 SAHU MART. All rights reserved.</div></footer>
+<a class="fab" id="fab" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.2 13.9c-.2.6-1.300 1.200-1.800 1.200-.5.1-1.100.1-1.800-.1-.4-.1-1-.3-1.700-.6-3-1.300-4.900-4.300-5-4.500-.1-.2-1.200-1.600-1.200-3s.8-2.100 1-2.400c.3-.3.600-.3.800-.3h.6c.2 0 .4 0 .6.500l.8 2c.1.200.1.400 0 .5l-.3.500-.4.400c-.1.200-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.200 1 2.100 1.300 2.400 1.500.3.100.4.100.6-.1l.8-1c.2-.3.400-.2.700-.1l1.900.9c.3.100.5.200.5.300.1.100.1.600-.1 1.200z"/></svg></a>
+<script>
+const WA="917318518830";let P=[],cart=[],lang="en",route=["home"],flt={cat:"",q:""},sel={},db=null,user=null,isAdmin=false,orders=[],edit=null;
+const LS=(k,v)=>{try{if(v===undefined)return JSON.parse(localStorage.getItem(k));localStorage.setItem(k,JSON.stringify(v))}catch(e){return null}};
+const CATS=[["men","Men's Clothing","पुरुष कपड़े"],["women","Women's Clothing","महिला कपड़े"],["kids","Kids' Clothing","बच्चों के कपड़े"],["shirts","Shirts & T-Shirts","शर्ट और टी-शर्ट"],["jeans","Jeans & Trousers","जींस और ट्राउज़र"],["kurtis","Kurtis & Dresses","कुर्ती और ड्रेस"],["new","New Arrivals","नए आगमन"],["best","Best Sellers","बेस्ट सेलर"]];
+const T={en:{tg:"Your Fashion, Your Style",home:"Home",shop:"Shop",about:"About Us",contact:"Contact Us",all:"All",search:"Search clothes…",add:"Add to Cart",buy:"Buy Now",wa:"Order on WhatsApp",size:"Size",colour:"Colour",qty:"Quantity",cart:"Cart",empty:"Nothing here yet.",total:"Total",checkout:"Checkout",place:"Place Order on WhatsApp",hero:"Fashion for the whole family",herop:"New styles for men, women and kids – order easily on WhatsApp.",shopnow:"Shop Now",feat:"New Arrivals",best:"Best Sellers",policies:"Policies",stock:"Out of stock",lang:"हिंदी"},
+hi:{tg:"आपका फ़ैशन, आपकी स्टाइल",home:"होम",shop:"शॉप",about:"हमारे बारे में",contact:"संपर्क करें",all:"सभी",search:"कपड़े खोजें…",add:"कार्ट में डालें",buy:"अभी खरीदें",wa:"WhatsApp पर ऑर्डर करें",size:"साइज़",colour:"रंग",qty:"मात्रा",cart:"कार्ट",empty:"अभी कुछ नहीं है।",total:"कुल",checkout:"चेकआउट",place:"WhatsApp पर ऑर्डर दें",hero:"पूरे परिवार के लिए फ़ैशन",herop:"पुरुष, महिला और बच्चों के नए स्टाइल – WhatsApp पर आसानी से ऑर्डर करें।",shopnow:"अभी खरीदें",feat:"नए आगमन",best:"बेस्ट सेलर",policies:"नीतियां",stock:"स्टॉक में नहीं",lang:"English"}};
+const t=k=>T[lang][k]||k,$=id=>document.getElementById(id),esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fin=p=>Math.round(p.price*(1-(p.disc||0)/100)),inr=n=>"₹"+Number(n).toLocaleString("en-IN");
+const POL={shipping:["Shipping Policy","शिपिंग नीति","Orders are confirmed on WhatsApp and dispatched within 2–4 working days. Delivery across India usually takes 4–9 days. Shipping charges, if any, are told to you before you confirm.","ऑर्डर WhatsApp पर कन्फ़र्म होते हैं और 2–4 कार्य दिवस में भेजे जाते हैं। भारत में डिलीवरी में आमतौर पर 4–9 दिन लगते हैं। शिपिंग शुल्क (यदि हो) कन्फ़र्म करने से पहले बताया जाएगा।"],
+returns:["Return & Refund Policy","रिटर्न और रिफंड नीति","Wrong, damaged or defective items can be returned or exchanged within 7 days of delivery, unused and with tags. Send photos on WhatsApp +91 7318518830. Approved refunds are made within 7 working days.","गलत, खराब या डैमेज सामान डिलीवरी के 7 दिन के भीतर बिना उपयोग और टैग सहित बदला या लौटाया जा सकता है। फ़ोटो WhatsApp +91 7318518830 पर भेजें। मंज़ूर रिफंड 7 कार्य दिवस में होगा।"],
+privacy:["Privacy Policy","गोपनीयता नीति","We collect your name, phone and address only to process and deliver your order. We never sell your data. Contact us on WhatsApp to have your data removed.","हम आपका नाम, फ़ोन और पता केवल ऑर्डर पूरा करने और डिलीवरी के लिए लेते हैं। आपका डेटा कभी नहीं बेचा जाता। डेटा हटवाने के लिए WhatsApp पर संपर्क करें।"],
+terms:["Terms & Conditions","नियम और शर्तें","By ordering from SAHU MART you agree that prices and stock may change, orders are confirmed only after our WhatsApp confirmation, and Cash on Delivery is available only where we confirm it.","SAHU MART से ऑर्डर करने पर आप मानते हैं कि कीमत और स्टॉक बदल सकते हैं, ऑर्डर हमारी WhatsApp पुष्टि के बाद ही मान्य है, और कैश ऑन डिलीवरी केवल वहीं मिलेगा जहां हम पुष्टि करें।"]};
+function save(){LS("sm_cart",cart);$("cc").textContent=cart.reduce((a,c)=>a+c.qty,0)}
+function go(r){location.hash=r}
+function toggleLang(){lang=lang=="en"?"hi":"en";LS("sm_lang",lang);chrome();draw()}
+function chrome(){const L=(a,b)=>lang=="en"?a:b;$("tg").textContent=t("tg");$("lb").textContent=t("lang");$("q").placeholder=t("search");document.documentElement.lang=lang=="en"?"en":"hi";
+$("nav").innerHTML=[["",t("home")],["shop",t("shop")],["shop/new","✨ "+CATS[6][lang=="en"?1:2]],["shop/best","🔥 "+CATS[7][lang=="en"?1:2]],["about",t("about")],["contact",t("contact")]].map(a=>`<a href="#${a[0]}">${a[1]}</a>`).join("");
+$("fl").innerHTML=`<b>${t("policies")}</b>`+Object.keys(POL).map(k=>`<a href="#${k}">${POL[k][lang=="en"?0:1]}</a>`).join("")+`<a href="#admin">Admin</a>`;
+$("fab").href="https://wa.me/"+WA+"?text="+encodeURIComponent("Hello SAHU MART, I need help with an order.")}
+function searchIt(v){flt.q=v;if(route[0]!="shop")location.hash="shop";else draw()}
+function card(p){const im=p.imgs&&p.imgs[0];return `<div class="card" onclick="go('p/${p.id}')"><div class="ph">${p.flags?.includes("new")?'<span class="tag">NEW</span>':""}${im?`<img loading="lazy" src="/_blob/${esc(im)}" alt="${esc(p.name)}">`:"👗"}</div><div class="ci"><h4>${esc(p.name)}</h4><div class="pr"><b>${inr(fin(p))}</b>${p.disc>0?`<s>${inr(p.price)}</s><em>${p.disc}% off</em>`:""}</div></div></div>`}
+function inCat(p,c){return !c||(p.cats||[]).includes(c)}
+function draw(){const [pg,a]=route,app=$("app");window.scrollTo(0,0);
+if(pg=="home"){const nw=P.filter(p=>inCat(p,"new")).slice(0,8),bs=P.filter(p=>inCat(p,"best")).slice(0,8);
+app.innerHTML=`<div class="hero"><h1>${t("hero")}</h1><p>${t("herop")}</p><button class="btn k" onclick="go('shop')">${t("shopnow")}</button></div><div class="chips">${CATS.slice(0,6).map(c=>`<span class="chip" onclick="go('shop/${c[0]}')">${c[lang=="en"?1:2]}</span>`).join("")}</div>`+
+(P.length?`<h2>${t("feat")}</h2><div class="grid">${(nw.length?nw:P.slice(0,8)).map(card).join("")}</div>`+(bs.length?`<h2>${t("best")}</h2><div class="grid">${bs.map(card).join("")}</div>`:""):`<div class="box mu">${t("empty")}</div>`)}
+else if(pg=="shop"){if(a!==undefined)flt.cat=a=="all"?"":a;const l=P.filter(p=>inCat(p,flt.cat)&&(!flt.q||(p.name+" "+(p.desc||"")).toLowerCase().includes(flt.q.toLowerCase())));
+app.innerHTML=`<h2>${t("shop")}</h2><div class="chips"><span class="chip ${!flt.cat?"on":""}" onclick="go('shop/all')">${t("all")}</span>${CATS.map(c=>`<span class="chip ${flt.cat==c[0]?"on":""}" onclick="go('shop/${c[0]}')">${c[lang=="en"?1:2]}</span>`).join("")}</div>`+(l.length?`<div class="grid">${l.map(card).join("")}</div>`:`<div class="box mu">${t("empty")}</div>`)}
+else if(pg=="p"){const p=P.find(x=>x.id==a);if(!p){app.innerHTML=`<div class="box">${t("empty")}</div>`;return}
+const s=sel[p.id]=sel[p.id]||{size:p.sizes?.[0]||"",color:p.colors?.[0]||"",qty:1,img:0},out=p.stock<=0;
+app.innerHTML=`<div class="pd" style="margin-top:14px"><div><div class="ph" style="border-radius:12px">${p.imgs?.[s.img]?`<img src="/_blob/${esc(p.imgs[s.img])}" alt="">`:"👗"}</div><div class="thumbs">${(p.imgs||[]).map((m,i)=>`<img src="/_blob/${esc(m)}" onclick="sel[${JSON.stringify(p.id)}].img=${i};draw()" alt="">`).join("")}</div></div>
+<div><h2 style="margin-top:0">${esc(p.name)}</h2><div class="pr"><b style="font-size:24px">${inr(fin(p))}</b>${p.disc>0?`<s>${inr(p.price)}</s><em>${p.disc}% off</em>`:""}</div><p class="mu">${esc(p.desc||"")}</p>
+<b>${t("size")}</b><div class="opt">${(p.sizes||[]).map(x=>`<span class="${s.size==x?"on":""}" onclick="pick('${p.id}','size',this.dataset.v)" data-v="${esc(x)}">${esc(x)}</span>`).join("")}</div>
+<b>${t("colour")}</b><div class="opt">${(p.colors||[]).map(x=>`<span class="${s.color==x?"on":""}" onclick="pick('${p.id}','color',this.dataset.v)" data-v="${esc(x)}">${esc(x)}</span>`).join("")}</div>
+<b>${t("qty")}</b> <span class="qty"><button onclick="qchg('${p.id}',-1)">−</button><b>${s.qty}</b><button onclick="qchg('${p.id}',1)">+</button></span>
+<p class="mu">${out?t("stock"):"In stock: "+p.stock}</p>
+<div class="row"><button class="btn" ${out?"disabled":""} onclick="addC('${p.id}')">${t("add")}</button><button class="btn k" ${out?"disabled":""} onclick="addC('${p.id}',1)">${t("buy")}</button><button class="btn g" ${out?"disabled":""} onclick="waOne('${p.id}')">${t("wa")}</button></div></div></div>`}
+else if(pg=="cart"){const tot=cart.reduce((x,c)=>x+c.price*c.qty,0);
+app.innerHTML=`<h2>${t("cart")}</h2>`+(cart.length?`<div class="box">${cart.map((c,i)=>`<div class="ci-row"><div><b>${esc(c.name)}</b><br><span class="mu">${esc(c.size)} · ${esc(c.color)} · ${inr(c.price)}</span></div><span class="qty"><button onclick="cq(${i},-1)">−</button>${c.qty}<button onclick="cq(${i},1)">+</button></span><b>${inr(c.price*c.qty)}</b><button class="btn o s" onclick="cart.splice(${i},1);save();draw()">✕</button></div>`).join("")}<p><b>${t("total")}: ${inr(tot)}</b></p><div class="row"><button class="btn" onclick="go('checkout')">${t("checkout")}</button><a class="btn g" target="_blank" rel="noopener" href="https://wa.me/${WA}?text=${encodeURIComponent(msg(cart))}">${t("wa")}</a></div></div>`:`<div class="box mu">${t("empty")}</div>`)}
+else if(pg=="checkout"){if(!cart.length){go("cart");return}const tot=cart.reduce((x,c)=>x+c.price*c.qty,0);
+app.innerHTML=`<h2>${t("checkout")}</h2><div class="two"><form class="box" onsubmit="return order(event)"><label>Name</label><input name="n" required><label>Phone (10 digit)</label><input name="ph" required pattern="[6-9][0-9]{9}" inputmode="numeric" maxlength="10"><label>Full address</label><textarea name="ad" required rows="3"></textarea><label>City</label><input name="ci" required><label>State</label><input name="st" required><label>PIN code</label><input name="pn" required pattern="[1-9][0-9]{5}" inputmode="numeric" maxlength="6"><label>Payment</label><select name="pm"><option>Cash on Delivery (confirmed on WhatsApp)</option><option disabled>Online payment – coming soon</option></select><button class="btn g" style="width:100%">${t("place")}</button></form><div class="box">${cart.map(c=>`<div class="ci-row"><span>${esc(c.name)} (${esc(c.size)}, ${esc(c.color)}) × ${c.qty}</span><b>${inr(c.price*c.qty)}</b></div>`).join("")}<p><b>${t("total")}: ${inr(tot)}</b></p></div></div>`}
+else if(pg=="about")app.innerHTML=`<h2>${t("about")}</h2><div class="box">${lang=="en"?"SAHU MART is an online clothing store bringing stylish, affordable fashion for men, women and kids across India. Order easily on WhatsApp – we confirm every order personally.":"SAHU MART एक ऑनलाइन कपड़ों की दुकान है जो पूरे भारत में पुरुष, महिला और बच्चों के लिए स्टाइलिश और किफ़ायती फ़ैशन लाती है। WhatsApp पर आसानी से ऑर्डर करें – हर ऑर्डर हम खुद कन्फ़र्म करते हैं।"}</div>`;
+else if(pg=="contact")app.innerHTML=`<h2>${t("contact")}</h2><div class="box"><p>WhatsApp / Phone: <b>+91 7318518830</b></p><a class="btn g" target="_blank" rel="noopener" href="https://wa.me/${WA}">Chat on WhatsApp</a></div>`;
+else if(POL[pg]){const x=POL[pg],i=lang=="en"?0:1;app.innerHTML=`<h2>${x[i]}</h2><div class="box">${x[i+2]}</div>`}
+else if(pg=="admin")admin();else go("")}
+function pick(id,k,v){sel[id][k]=v;draw()}function qchg(id,d){const s=sel[id];s.qty=Math.max(1,s.qty+d);draw()}
+function line(p){const s=sel[p.id];return{id:p.id,name:p.name,price:fin(p),size:s.size,color:s.color,qty:s.qty}}
+function addC(id,buy){const p=P.find(x=>x.id==id),l=line(p),e=cart.find(c=>c.id==l.id&&c.size==l.size&&c.color==l.color);if(e)e.qty+=l.qty;else cart.push(l);save();go(buy?"checkout":"cart")}
+function cq(i,d){cart[i].qty=Math.max(1,cart[i].qty+d);save();draw()}
+function msg(items,c){let m="🛍️ *New Order – SAHU MART*\n\n"+items.map((x,i)=>`${i+1}. ${x.name}\n   Size: ${x.size||"-"}, Colour: ${x.color||"-"}, Qty: ${x.qty}, Price: ${inr(x.price)}`).join("\n")+`\n\n*Total: ${inr(items.reduce((a,x)=>a+x.price*x.qty,0))}*`;
+if(c)m+=`\n\n*Customer:* ${c.n}\n*Phone:* ${c.ph}\n*Address:* ${c.ad}, ${c.ci}, ${c.st} - ${c.pn}\n*Payment:* ${c.pm}`;return m}
+function waOne(id){open("https://wa.me/"+WA+"?text="+encodeURIComponent(msg([line(P.find(x=>x.id==id))])),"_blank")}
+async function order(e){e.preventDefault();const f=new FormData(e.target),c=Object.fromEntries(f),items=cart.slice(),total=items.reduce((a,x)=>a+x.price*x.qty,0);
+open("https://wa.me/"+WA+"?text="+encodeURIComponent(msg(items,c)),"_blank");cart=[];save();go("cart")}
+/* ---------- Admin ---------- */
+function admin(){const app=$("app");if(!isAdmin){app.innerHTML=`<h2>Admin</h2><div class="box">Admin access is only for the store owner. Open this page while signed in to the owner's claude.ai account.</div>`;return}
+const p=edit||{};app.innerHTML=`<h2>Admin Dashboard</h2><form class="box" onsubmit="return saveP(event)"><b>${p.id?"Edit":"Add"} product</b><input name="name" placeholder="Product name" required value="${esc(p.name)}"><div class="chips" style="flex-wrap:wrap">${CATS.map(c=>`<label class="chip"><input type="checkbox" name="cats" value="${c[0]}" style="width:auto;margin:0 4px 0 0" ${(p.cats||[]).includes(c[0])?"checked":""}>${c[1]}</label>`).join("")}</div>
+<div class="row"><input name="price" type="number" min="1" placeholder="Price ₹" required value="${p.price||""}" style="flex:1"><input name="disc" type="number" min="0" max="90" placeholder="Discount %" value="${p.disc||""}" style="flex:1"><input name="stock" type="number" min="0" placeholder="Stock" required value="${p.stock??""}" style="flex:1"></div>
+<input name="sizes" placeholder="Sizes, comma separated (S,M,L,XL)" value="${esc((p.sizes||[]).join(","))}"><input name="colors" placeholder="Colours, comma separated (Red,Blue)" value="${esc((p.colors||[]).join(","))}"><textarea name="desc" rows="3" placeholder="Description">${esc(p.desc)}</textarea>
+<label>Photos (multiple)</label><input type="file" name="files" accept="image/*" multiple><div class="mu">${(p.imgs||[]).length} existing photo(s) kept; new ones are added.</div><div class="row"><button class="btn">Save product</button>${p.id?`<button type="button" class="btn o" onclick="edit=null;admin()">Cancel</button>`:""}</div></form>
+<div class="box tb"><b>Products (${P.length})</b><table>${P.map(x=>`<tr><td>${esc(x.name)}</td><td>${inr(fin(x))}</td><td>${x.stock}</td><td><button class="btn o s" onclick="edit=P.find(y=>y.id=='${x.id}');admin();scrollTo(0,0)">Edit</button> <button class="btn o s" onclick="delP('${x.id}')">Delete</button></td></tr>`).join("")}</table></div>
+<div class="box mu">Orders arrive as WhatsApp messages on +91 7318518830 – that is your order record.</div>`}
+async function saveP(e){e.preventDefault();const f=new FormData(e.target),sp=s=>String(f.get(s)||"").split(",").map(x=>x.trim()).filter(Boolean),id=edit?.id||"p"+Date.now();let imgs=edit?.imgs||[];
+try{const as=await claude.use("assets");for(const fl of f.getAll("files"))if(fl.size){const r=await as.upload(fl);imgs=[...imgs,r.id]}}catch(x){alert("Photo upload failed: "+(x.message||x))}
+const d={name:f.get("name"),cats:f.getAll("cats"),flags:f.getAll("cats").filter(c=>c=="new"||c=="best"),price:+f.get("price"),disc:+f.get("disc")||0,stock:+f.get("stock"),sizes:sp("sizes"),colors:sp("colors"),desc:f.get("desc"),imgs};
+try{await db.collection("products").doc(id).set(d);edit=null}catch(x){alert("Could not save: "+(x.message||x))}admin()}
+async function delP(id){if(confirm("Delete this product?"))try{await db.collection("products").doc(id).delete()}catch(x){alert("Could not delete")}}
+function router(){const h=location.hash.slice(1).split("/");route=[h[0]||"home",h[1]];draw()}
+window.addEventListener("hashchange",router);
+cart=LS("sm_cart")||[];lang=LS("sm_lang")||"en";save();chrome();router();
+(async()=>{try{user=await claude.use("user");isAdmin=!!(user&&user.canEdit());db=await claude.use("db");
+if(db){db.collection("products").onSnapshot(s=>{P=s.docs.map(d=>({id:d.id,...d.data()}));if(["home","shop","p"].includes(route[0]))draw();if(route[0]=="admin")admin()});}
+if(route[0]=="admin")admin()}catch(e){}})();
+</script></body></html>
